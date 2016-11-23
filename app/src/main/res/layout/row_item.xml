@@ -20,70 +20,61 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp">
+        android:layout_height="wrap_content">
 
         <TextView
             android:text="Length:"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView3"
-            android:layout_weight="4" />
+            android:id="@+id/textView2"
+            android:layout_weight="1" />
 
         <TextView
-            android:text="fsdfsdfsd fsdfsd fsfsf"
-            android:layout_width="match_parent"
+            android:text="TextView"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textViewListLength"
-            android:layout_weight="1"
-            android:layout_marginLeft="10dp" />
-
+            android:layout_weight="1" />
     </LinearLayout>
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp">
+        android:layout_height="wrap_content">
 
         <TextView
             android:text="Radius:"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView4"
-            android:layout_weight="4" />
+            android:layout_weight="1" />
 
         <TextView
             android:text="TextView"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textViewListRadius"
-            android:layout_weight="1"
-            android:layout_marginLeft="10dp" />
-
+            android:layout_weight="1" />
     </LinearLayout>
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp">
+        android:layout_height="wrap_content">
 
         <TextView
             android:text="Color:"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView4"
-            android:layout_weight="4" />
+            android:id="@+id/textView6"
+            android:layout_weight="1" />
 
         <TextView
             android:text="TextView"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textViewListColor"
-            android:layout_weight="1"
-            android:layout_marginLeft="10dp" />
-
+            android:layout_weight="1" />
     </LinearLayout>
 
 

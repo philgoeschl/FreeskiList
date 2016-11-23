@@ -20,9 +20,9 @@ public class CustomAdapter extends BaseAdapter {
     Context context;
     LayoutInflater inflter;
 
-    public CustomAdapter(Context applicationContext, List<Freeski> listUsers) {
+    public CustomAdapter(Context applicationContext, List<Freeski> listFreeski) {
         this.context = applicationContext;
-        this.listFreeski= listUsers;
+        this.listFreeski= listFreeski;
         inflter = (LayoutInflater.from(applicationContext));
     }
 
@@ -54,8 +54,8 @@ public class CustomAdapter extends BaseAdapter {
 
         Freeski freeski = listFreeski.get(i);
         viewBrand.setText(freeski.getBrand());
-        viewLength.setText(freeski.getLength());
-        viewRadius.setText(freeski.getRadius());
+        viewLength.setText(String.valueOf(freeski.getLength()));
+        viewRadius.setText(String.valueOf(freeski.getRadius()));
         viewColor.setText(freeski.getColor());
 
         return view;

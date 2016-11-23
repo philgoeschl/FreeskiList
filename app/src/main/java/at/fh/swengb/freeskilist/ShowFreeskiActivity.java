@@ -1,18 +1,16 @@
 package at.fh.swengb.freeskilist;
 
+import android.app.SearchManager;
 import android.content.Intent;
 import android.net.Uri;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
 import at.fh.swengb.freeskilist.model.Freeski;
 
-/**
- * Created by phgo_000 on 22.11.2016.
- */
-
-public class ShowFreeskiActivity {
+public class ShowFreeskiActivity extends AppCompatActivity {
     private Freeski freeski;
 
     @Override
@@ -23,18 +21,27 @@ public class ShowFreeskiActivity {
         Intent intent = getIntent();
         freeski = (Freeski) intent.getExtras().get("freeski");
 
-        TextView viewBrand = (TextView) findViewById(R.id.textViewListBrand);
-        TextView viewLength = (TextView) findViewById(R.id.textViewListLength);
-        TextView viewRadius = (TextView) findViewById(R.id.textViewListRadius);
-        TextView viewColor = (TextView) findViewById(R.id.textViewListColor);
+        TextView viewFirstName = (TextView) findViewById(R.id.textViewListBrand);
+        TextView viewLastName = (TextView) findViewById(R.id.textViewListLength);
+        TextView viewAddress = (TextView) findViewById(R.id.textViewListRadius);
+        TextView viewPhone = (TextView) findViewById(R.id.textViewListColor);
 
-
-        viewBrand.setText(freeski.getBrand());
-        viewLength.setText(freeski.getLength());
-        viewRadius.setText(freeski.getRadius());
-        viewColor.setText(freeski.getColor());
+        viewFirstName.setText(freeski.getBrand());
+        viewLastName.setText(String.valueOf(freeski.getLength()));
+        viewAddress.setText(String.valueOf(freeski.getRadius()));
+        viewPhone.setText(freeski.getColor());
 
     }
 
+    public void webSearchBrand(View view) {
+        Uri uri = Uri.parse("http://www.google.com/#q="+freeski.getBrand());
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+    }
 
+    public void youtubeSearchBrand(View view) {
+        Uri uri = Uri.parse("https://www.youtube.com/results?search_query="+freeski.getBrand());
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+    }
 }

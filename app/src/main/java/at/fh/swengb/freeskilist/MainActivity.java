@@ -25,10 +25,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         listFreeski = new ArrayList<>();
         listFreeski.add(new Freeski("Salomon CZAR",190,55,"Black",true,true));
-        listFreeski.add(new Freeski("Salomon CZAR",190,55,"Black",true,true));
-        listFreeski.add(new Freeski("Salomon CZAR",190,55,"Black",true,true));
-        listFreeski.add(new Freeski("Salomon CZAR",190,55,"Black",true,true));
-        listFreeski.add(new Freeski("Salomon CZAR",190,55,"Black",true,true));
+        listFreeski.add(new Freeski("K2 Hellbent",189,22,"Black, Yellow, Blue",true,true));
+        listFreeski.add(new Freeski("Atomic Bent Chetler",192,20,"Light Brown",true,true));
+        listFreeski.add(new Freeski("Salomon Rocker2",184,26,"Black, White",true,true));
+        listFreeski.add(new Freeski("Atomic Automatic",186,19,"Red",true,true));
+        listFreeski.add(new Freeski("Salomon BBR",186,14,"Blue",true,true));
 
 
         myListView = (ListView) findViewById(R.id.myFreeskiList);
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
         Freeski selectedFreeski = listFreeski.get(i);
         Intent intent = new Intent(view.getContext(),ShowFreeskiActivity.class);
-        intent.putExtra("user",selectedFreeski);
+        intent.putExtra("freeski",selectedFreeski);
         startActivity(intent);
     }
 }

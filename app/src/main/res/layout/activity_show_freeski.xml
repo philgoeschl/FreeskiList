@@ -19,63 +19,94 @@
         android:layout_alignParentStart="true">
 
         <TextView
-            android:text="Freeski Details"
+            android:text="Details"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textAlignment="center" />
 
         <TextView
-            android:text="TextView"
+            android:text="Brand:"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textViewBrand"
             android:textSize="24sp"
-            android:layout_marginTop="30dp" />
+            android:layout_marginTop="20dp" />
 
         <TextView
             android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewListBrand"
+            android:textSize="24sp" />
+
+        <TextView
+            android:text="Length:"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textViewLength"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:layout_marginTop="20dp" />
 
         <TextView
             android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewListLength"
+            android:textSize="24sp" />
+
+        <TextView
+            android:text="Radius:"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textViewRadius"
-            android:layout_marginTop="30dp"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:layout_marginTop="20dp" />
 
         <TextView
             android:text="TextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/textViewListRadius"
+            android:textSize="24sp" />
+
+        <TextView
+            android:text="Color:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/textViewColor"
+            android:textSize="24sp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewListColor"
             android:textSize="24sp" />
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp">
+            android:layout_marginTop="20dp">
 
             <Button
-                android:text="Show"
+                android:text="Google"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/buttonMap"
+                android:id="@+id/buttonGoogleSearch"
                 android:layout_weight="1"
-                android:onClick="showOnMap" />
+                android:onClick="webSearchBrand" />
 
             <Button
-                android:text="Call"
+                android:text="Youtube"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/buttonCall"
                 android:layout_weight="1"
-                android:onClick="call" />
+                android:onClick="youtubeSearchBrand" />
         </LinearLayout>
 
     </LinearLayout>
